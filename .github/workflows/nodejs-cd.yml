@@ -17,8 +17,8 @@ jobs:
       uses: appleboy/ssh-action@v1
       with:
         host: ${{ secrets.HOST }}
-        username: linuxserver.io
-        key: ${{ secrets.KEY }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
         port: 22
         script: |
           cd ~/apps/ga-ci-cd-nodejs
